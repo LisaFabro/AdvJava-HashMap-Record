@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AdvJava-HashMap-Record.iml" filepath="$PROJECT_DIR$/AdvJava-HashMap-Record.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HashMap_1/HashMap_1.iml" filepath="$PROJECT_DIR$/HashMap_1/HashMap_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HashMap_2/HashMap_2.iml" filepath="$PROJECT_DIR$/HashMap_2/HashMap_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Record/Record.iml" filepath="$PROJECT_DIR$/Record/Record.iml" />
+    </modules>
+  </component>
+</project>
