@@ -1,6 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Main {
     //Creare un hashmap prendere tutti i valori, ordinarli e stamparli
@@ -11,7 +9,7 @@ public class Main {
         Fruit ananas = new Fruit("ananas", 1.50);
         Fruit kiwi = new Fruit("kiwi", 1.99);
 
-        Map<String, Fruit> fruitShop = new HashMap<String, Fruit>();
+        HashMap<String, Fruit> fruitShop = new HashMap<String, Fruit>();
         fruitShop.put("fruit1", apple);
         fruitShop.put("fruit2", strawberry);
         fruitShop.put("fruit3", pear);
@@ -20,9 +18,12 @@ public class Main {
 
         System.out.println("Frutta non ordinata: " + fruitShop);
 
-        TreeMap<String,Fruit> orderFruit = new TreeMap<>();
-        orderFruit.putAll(fruitShop);
+//       TreeMap<String,Fruit> orderFruit = new TreeMap<>();
+//        orderFruit.putAll(fruitShop);
 
-        System.out.println("Ordine secondo inserimento: " + orderFruit);
+        List<Fruit> orderedFruit = new ArrayList<Fruit>(fruitShop.values());
+        orderedFruit.sort(Comparator.comparing(Fruit :: getName));
+
+        System.out.println("Ordine secondo inserimento: " + orderedFruit);
     }
 }
